@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { events } from "../../actions";
 import EventForm from "./event_form";
 import "./index.css";
-
+//comment//
 class Events extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +14,7 @@ class Events extends Component {
 
   componentDidMount() {
     this.props.fetchEvents();
-  }
+  } 
 
   selectForEdit = id => {
     let edit_event = this.props.events[id];

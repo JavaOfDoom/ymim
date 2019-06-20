@@ -17,7 +17,8 @@ class EventForm extends Component {
 
     
       title: "",
-      description: ""
+      description: "",
+      start_datetime: ""
   
   };
 
@@ -30,7 +31,8 @@ class EventForm extends Component {
       "event name: " +
       this.state.title + " " +
       "Event description: " +
-      this.state.description
+      this.state.description + ""+
+      this.state.start_datetime
     );
   };
   submitEvent = (event) => {
@@ -98,7 +100,7 @@ class EventForm extends Component {
 
               <Form.Group as={Col} controlId="startTime">
                 <label htmlFor="inputTime">Start Time</label>
-                <input type="time" className="form-control" id="inputTime" />
+                <input type="time" onChange= {this.handleChange} className="form-control" id="inputTime" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="endTime">
