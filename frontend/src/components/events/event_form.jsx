@@ -24,9 +24,15 @@ class EventForm extends Component {
 
   handleFormChange = event => {
     const { name, value } = event.target;
-    this.setState({ event : {
-      [name]: value
-     } });
+    this.setState(prevState => ({
+      event: {
+        ...prevState.event,
+        [name]: value
+      }
+    }))
+    // this.setState({ event : {
+    //   [name]: value
+    //  } });
     console.log(
       "event name: " +
       this.state.event.title + " " +
