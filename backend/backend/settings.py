@@ -18,12 +18,9 @@ except IsADirectoryError as exception:
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG", False)
+DEBUG = os.getenv("DEBUG", True)
 
-ALLOWED_HOSTS = [
-    "ymim-backend-staging.herokuapp.com",
-    "ymim-backend-production.herokuapp.com",
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

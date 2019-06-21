@@ -15,7 +15,7 @@ export const fetchEvents = () => {
 export const addEvent = event => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify( {event} );
+    let body = JSON.stringify( {title: event.title, description: event.description} );
     console.log("CHECK HERE FOR BODY" + body);
     return fetch("api/events/", {
       headers,

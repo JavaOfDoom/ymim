@@ -42,6 +42,7 @@ class EventForm extends Component {
   };
   submitEvent = (event) => {
     event.preventDefault();
+    console.log("testing submit event", event, this.state.event)
     this.props.addEvent(this.state.event);
   }
 
