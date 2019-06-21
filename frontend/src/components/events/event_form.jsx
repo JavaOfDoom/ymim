@@ -12,32 +12,31 @@ import {
 
 
 
-class EventForm extends Component {
+class EventForm extends Component { 
   state = {
 
-    
+    event: {
       title: "",
       description: "",
-      start_datetime: ""
-  
+      // start_datetime: ""
+    }
   };
 
   handleFormChange = event => {
     const { name, value } = event.target;
-    this.setState({
+    this.setState({ event : {
       [name]: value
-    });
+     } });
     console.log(
       "event name: " +
-      this.state.title + " " +
+      this.state.event.title + " " +
       "Event description: " +
-      this.state.description + ""+
-      this.state.start_datetime
+      this.state.event.description 
     );
   };
   submitEvent = (event) => {
     event.preventDefault();
-    this.props.addEvent(this.props.event);
+    this.props.addEvent(this.state.event);
   }
 
   //   const {
@@ -68,7 +67,7 @@ class EventForm extends Component {
                 placeholder="Enter the name of event"
                 name="title"
                 onChange={this.handleFormChange}
-                value={this.props.event.title}
+                value={this.state.event.title}
               />
             </Form.Group>
 
@@ -78,7 +77,7 @@ class EventForm extends Component {
                 placeholder="Enter a description of event"
                 name="description"
                 onChange={this.handleFormChange}
-                value={this.props.event.description}
+                value={this.state.event.description}
               />
             </Form.Group>
 
@@ -100,7 +99,7 @@ class EventForm extends Component {
 
               <Form.Group as={Col} controlId="startTime">
                 <label htmlFor="inputTime">Start Time</label>
-                <input type="time" onChange= {this.handleChange} className="form-control" id="inputTime" />
+                <input type="time" className="form-control" id="inputTime" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="endTime">
