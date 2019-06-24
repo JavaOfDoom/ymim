@@ -10,14 +10,11 @@ import {
   FormControl
 } from "react-bootstrap";
 
-
-
-class EventForm extends Component { 
+class EventForm extends Component {
   state = {
-
     event: {
       title: "",
-      description: "",
+      description: ""
       // start_datetime: ""
     }
   };
@@ -29,22 +26,23 @@ class EventForm extends Component {
         ...prevState.event,
         [name]: value
       }
-    }))
+    }));
     // this.setState({ event : {
     //   [name]: value
     //  } });
     console.log(
       "event name: " +
-      this.state.event.title + " " +
-      "Event description: " +
-      this.state.event.description 
+        this.state.event.title +
+        " " +
+        "Event description: " +
+        this.state.event.description
     );
   };
-  submitEvent = (event) => {
+  submitEvent = event => {
     event.preventDefault();
-    console.log("testing submit event", event, this.state.event)
+    console.log("testing submit event", event, this.state.event);
     this.props.addEvent(this.state.event);
-  }
+  };
 
   //   const {
   //   name,
@@ -96,12 +94,7 @@ class EventForm extends Component {
             <Form.Row>
               <Form.Group as={Col} controlId="date">
                 <label htmlFor="inputDate">Start Date</label>
-                <input
-                  type="date"
-                  className="form-control"
-                  id="inputDate"
-
-                />
+                <input type="date" className="form-control" id="inputDate" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="startTime">
@@ -118,9 +111,9 @@ class EventForm extends Component {
             <label htmlFor="basic-url">Event URL</label>
             <InputGroup className="mb-3">
               <InputGroup.Prepend>
-                {/* <InputGroup.Text id="basic-addon3">
-                https://example.com/users/
-              </InputGroup.Text> */}
+                <InputGroup.Text id="basic-addon3">
+                  https://eventbright.com/
+                </InputGroup.Text>
               </InputGroup.Prepend>
               <FormControl id="basic-url" aria-describedby="basic-addon3" />
             </InputGroup>
@@ -130,11 +123,13 @@ class EventForm extends Component {
               <Form.Control as="textarea" rows="3" />
             </Form.Group>
 
+            <Button variant="outline-secondary">Upload an image</Button>
+
             <Form.Group id="formGridCheckbox">
               <Form.Check type="checkbox" label="Registration required" />
             </Form.Group>
 
-            <Button variant="light" type="submit" onClick={this.submitEvent}>
+            <Button variant="dark" type="submit" onClick={this.submitEvent}>
               Add event
             </Button>
           </Form>

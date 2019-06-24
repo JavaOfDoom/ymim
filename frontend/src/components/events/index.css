@@ -14,3 +14,8 @@ tr {
   margin: 10px;
   padding: 90px;
 }
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
