@@ -21,6 +21,10 @@
  text-align: right; 
 }
 
+.eventImage {
+  max-width: 240px;
+  max-height:210px;
+}
 
 .btn {
   font-size: 15px;
