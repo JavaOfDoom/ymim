@@ -14,7 +14,7 @@ import {
 } from "react-bootstrap";
 import { events } from "../../actions";
 import EventForm from "./event_form";
-import Blurb from "./event_blurb";
+import Blurb from "./blurb_event";
 import { Carousel } from "react-bootstrap";
 
 
@@ -60,16 +60,17 @@ class Events extends Component {
   render() {
     return (
       <div>
-        <h1>Current Events</h1>
-        <div className="col-md-6">
-          <EventForm event={this.state.event} />
-        </div>
-        <div className="row">
+        <Blurb />
+       <div className="eventsDisplay">
+        <Container>
+          <Row>
+            <Col>
           <EventList>
             {this.props.events.map(event => {
-
+            
               return (
-
+              
+                <Col>
                 <EventItems
                   key={event.id}
                   name={
@@ -98,16 +99,22 @@ class Events extends Component {
                       : logo
                   }
                 />
-
+              </Col>
               )
 
             })}
           </EventList>
+          </Col>
+          </Row>
+          </Container> 
+        </div> 
+       
+        
         </div>
     
 
 
-      </div>
+     
     );
   }
 }
