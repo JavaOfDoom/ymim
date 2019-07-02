@@ -83,12 +83,10 @@ tr {
   margin-bottom: 50px; 
   font-size: 1.2rem;
 }
-
 #eventForm {
   border-radius: 25px;
   border: 2px solid #f1f1f1;
 }
-
 #eventForm h2{
   padding-bottom: 20px; 
   text-align: center;
@@ -106,7 +104,6 @@ tr {
   padding-left: 100px; 
   padding-right: 100px; 
 }
-
 .addEventBtn,
 .viewPastEvents,
 .hideFormButton {

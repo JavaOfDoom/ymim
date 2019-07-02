@@ -22,9 +22,8 @@ import { Carousel } from "react-bootstrap";
 import ymim1 from "../../assets/ymim1.png";
 
 import "./index.css";
-import { Navbar } from "react-bootstrap";
 import logo from "../../assets/logo.png";
-
+import { EventList, EventItems } from "./event_card";
 
 
 
@@ -40,6 +39,7 @@ class Events extends Component {
 
   componentDidMount() {
     this.props.fetchEvents();
+
   }
   selectForEdit = id => {
     let edit_event = this.props.events[id];
@@ -60,78 +60,49 @@ class Events extends Component {
   render() {
     return (
       <div>
+        <h1>Current Events</h1>
+        <div className="col-md-6">
+          <EventForm event={this.state.event} />
+        </div>
+        <div className="row">
+          <EventList>
+            {this.props.events.map(event => {
 
+              return (
 
-        {/* Using the Carousel for right. Not sure if we want to keep it or not??? */}
-        {/* <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={ymim1}
-              alt="First Sllllideslide"
-            />
-            <Carousel.Caption>
-              <div class="overlay">
-                <h3 className="title-carousel">Events</h3>
-                <p className="paragraph-carousel">
-                  inspires, connects, and empowers young women orphans, adoptees,
-                  and foster youth alumnae to thrive.
-              </p>
-                <Navbar.Brand className="logo-div">
-                  <img className="logo" src={logo} alt="YMIM" />
-                </Navbar.Brand>
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
+                <EventItems
+                  key={event.id}
+                  name={
+                    event.name
+                      ? event.name.text
+                      : "Young Masterbuilders In Motion Event"
+                  }
+                  description={
+                    event.description
+                      ? event.description.text
+                      : ""
+                  }
+                  start={
+                    event.start
+                      ? event.start.local
+                      : "TBA"
+                  }
+                  end={
+                    event.end
+                      ? event.end.local
+                      : "TBA"
+                  }
+                  logo={
+                    event.logo
+                      ? event.logo.url
+                      : logo
+                  }
+                />
 
+              )
 
-        </Carousel> */}
-<Blurb />
-
-
-
-
-        <div className="eventsDisplay">
-          <Container>
-            <Row>
-
-              {this.props.events.map((event, id) => (
-
-                <Col>
-                  <div className="event_container" key={`event_${event.id}`}>
-                    <Col>
-                      <h3>{event.title}</h3>
-                      <img src={event.event_image} />
-                      <p>{event.description}</p>
-                      <p className="eventDisplayTime">Event date and time:</p>
-
-                      <p>{event.start_datetime}</p>
-                      <p>to</p>
-                      <p>{event.end_datetime}</p>
-
-                      <div className="eventButtons">
-                        
-                        <button
-                          className="btn btn-light btn-edit"
-                          onClick={() => this.selectForEdit(id)}
-                        >
-                          Edit
-                        </button>
-                        <button
-                          onClick={() => this.props.deleteEvent(id)}
-                          className="btn btn-light btn-delete"
-                        >
-                          Delete
-                        </button>
-                      </div>
-                    </Col>
-                  </div>
-                </Col>
-              ))}
-
-
-            </Row>
-          </Container>
+            })}
+          </EventList>
         </div>
     
 
