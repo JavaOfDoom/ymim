@@ -64,13 +64,13 @@ class Events extends Component {
        <div className="eventsDisplay">
         <Container>
           <Row>
-            <Col>
-          <EventList>
-            {this.props.events.map(event => {
             
+       
+            {this.props.events.map(event => {
+              
               return (
               
-                <Col>
+               <Col>
                 <EventItems
                   key={event.id}
                   name={
@@ -99,12 +99,13 @@ class Events extends Component {
                       : logo
                   }
                 />
-              </Col>
+                </Col>
               )
 
             })}
-          </EventList>
-          </Col>
+         
+          
+          
           </Row>
           </Container> 
         </div> 

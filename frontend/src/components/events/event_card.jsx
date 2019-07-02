@@ -22,20 +22,17 @@ import { Navbar } from "react-bootstrap";
 import logo from "../../assets/logo.png";
 import "./index.css";
 
-export function EventList({ children }) {
-    return <ul className="list-group">{children}</ul>;
-  }
+// export function EventList({ children }) {
+//     return <ul className="list-group">{children}</ul>;
+//   }
   
 
 const EventItems = props => {
 return (
 <div className="eventsDisplay">
-          <Container>
-            <Row>
-              
-                <Col>
+  
                   <div className="event_container">
-                    <Col>
+                    
                       <h3>{props.name}</h3>
                       <img className = "eventImage" src={props.logo} />
                       <p>{props.description}</p>
@@ -58,12 +55,11 @@ return (
                           Delete
                         </button>
                       </div>
-                    </Col>
+                    
                   </div>
-                </Col>
+                
               
-            </Row>
-          </Container>
+           
         </div>
     
 )
