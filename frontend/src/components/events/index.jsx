@@ -2,28 +2,14 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import {
   Container,
-  Form,
   Col,
-  Button,
-  InputGroup,
-  FormControl,
-  Row,
-  Label,
-  Input,
-  FormGroup
+  Row
 } from "react-bootstrap";
 import { events } from "../../actions";
-import EventForm from "./event_form";
 import Blurb from "./blurb_event";
-import { Carousel } from "react-bootstrap";
-
-
-
-import ymim1 from "../../assets/ymim1.png";
-
 import "./index.css";
 import logo from "../../assets/logo.png";
-import { EventList, EventItems } from "./event_card";
+import { EventItems } from "./event_card";
 
 
 
