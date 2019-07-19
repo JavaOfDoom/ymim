@@ -47,7 +47,7 @@ class About extends Component {
             world economy. Through access and exposure to the arts, healthcare
             advocacy, sciences, technology, industries, and international
             mission experiences we aim to enrich the cultural, personal, and
-            professional aspects of each participant. 
+            professional aspects of each participant.
           </p>
 
           <p>
@@ -84,30 +84,24 @@ class About extends Component {
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
             />
             <div className="floatp">
-              <h1>Kim Wright</h1>
-              <h4>Founder,Alumnae Executive Director</h4>
+              <h1>Kim Wright, MBA</h1>
+              <h4>Founder and President</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                ultrices nisl in consectetur ultricies. Sed a vestibulum purus,
-                et consequat risus. Aliquam dapibus vestibulum elit. Nullam
-                interdum consectetur nulla, eget faucibus tellus suscipit a. Ut
-                bibendum efficitur suscipit. Maecenas euismod diam non nibh
-                scelerisque, sed cursus leo ullamcorper. Morbi laoreet eros sit
-                amet tempor fringilla. Fusce bibendum sollicitudin consectetur.
-                Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Mauris at varius orci. Nullam mattis
-                vulputate nibh. Etiam porttitor tempus tortor vel finibus. Sed a
-                lacus placerat nisi efficitur aliquam. Aliquam et purus sapien.
-                In ut lorem vulputate, feugiat erat non, pharetra justo.
-                Pellentesque finibus, sem at consequat molestie, erat quam
-                molestie est, tincidunt placerat orci purus cursus orci. Duis
-                maximus orci at risus venenatis, non fringilla nisi sodales.
-                Proin odio nunc, ornare eget auctor eu, interdum at ante. Sed
-                tempus facilisis arcu ac imperdiet. Vestibulum ante ipsum primis
-                in faucibus orci luctus et ultrices posuere cubilia Curae; Donec
-                feugiat sem ac tristique dapibus. Pellentesque id nulla augue.
-                Sed vulputate felis et dictum porta. Cras quis placerat ipsum.
-                Vestibulum id eros lectus. Nulla id semper nulla.
+                Wright grew up as a youth-in-care from age 2 to 17 in multiple
+                foster homes and a catholic orphanage after losing her mother to
+                a premature death due to a horrific domestic violence incident.
+                At the age of 7, Wright knew then that her life’s path would
+                lead her serve children and young people who also grew up
+                without the care and guidance of their own loving mother or
+                father. Lacking mentors and relatives to share their experiences
+                on how they made it and how she could too, caused Wright to
+                always read and research how to do anything. Wright has worked
+                as a reporter, writer, editor, HR manager, trainer, case
+                manager, and director. Finally stepping out on faith to do what
+                she had in her heart since age 7, Wright quotes Audrey Lorde,
+                “When I dare to be powerful—to use my strength in the service of
+                my vision, then it becomes less and less important whether I am
+                afraid.”
               </p>
             </div>
           </div>
@@ -122,30 +116,16 @@ class About extends Component {
             />
 
             <div className="floatp">
-              <h1>Kim Wright</h1>
-              <h4>Founder,Alumnae Executive Director</h4>
+              <h1>Pierre Priestley, JD, MBA</h1>
+              <h4>Board Officer, Treasurer</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                ultrices nisl in consectetur ultricies. Sed a vestibulum purus,
-                et consequat risus. Aliquam dapibus vestibulum elit. Nullam
-                interdum consectetur nulla, eget faucibus tellus suscipit a. Ut
-                bibendum efficitur suscipit. Maecenas euismod diam non nibh
-                scelerisque, sed cursus leo ullamcorper. Morbi laoreet eros sit
-                amet tempor fringilla. Fusce bibendum sollicitudin consectetur.
-                Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Mauris at varius orci. Nullam mattis
-                vulputate nibh. Etiam porttitor tempus tortor vel finibus. Sed a
-                lacus placerat nisi efficitur aliquam. Aliquam et purus sapien.
-                In ut lorem vulputate, feugiat erat non, pharetra justo.
-                Pellentesque finibus, sem at consequat molestie, erat quam
-                molestie est, tincidunt placerat orci purus cursus orci. Duis
-                maximus orci at risus venenatis, non fringilla nisi sodales.
-                Proin odio nunc, ornare eget auctor eu, interdum at ante. Sed
-                tempus facilisis arcu ac imperdiet. Vestibulum ante ipsum primis
-                in faucibus orci luctus et ultrices posuere cubilia Curae; Donec
-                feugiat sem ac tristique dapibus. Pellentesque id nulla augue.
-                Sed vulputate felis et dictum porta. Cras quis placerat ipsum.
-                Vestibulum id eros lectus. Nulla id semper nulla.
+                “Service to our youth today will ensure the strength of our
+                world tomorrow.” Priestley currently serves as an associate
+                general counsel of Investment Property Exchange Services, Inc.
+                He is an attorney and Certified Public Accountant. Priestley
+                served in a variety of roles in large companies as a tax analyst
+                and manager. He has worked on many community service initiatives
+                for to equip youth and young adults.
               </p>
             </div>
           </div>
@@ -159,30 +139,15 @@ class About extends Component {
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
             />
             <div className="floatp">
-              <h1>Kim Wright</h1>
-              <h4>Founder,Alumnae Executive Director</h4>
+              <h1>Shirley Scott, MS, RN-BC, C-EFM, APN, DNP</h1>
+              <h4>Board Officer, Secretary</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                ultrices nisl in consectetur ultricies. Sed a vestibulum purus,
-                et consequat risus. Aliquam dapibus vestibulum elit. Nullam
-                interdum consectetur nulla, eget faucibus tellus suscipit a. Ut
-                bibendum efficitur suscipit. Maecenas euismod diam non nibh
-                scelerisque, sed cursus leo ullamcorper. Morbi laoreet eros sit
-                amet tempor fringilla. Fusce bibendum sollicitudin consectetur.
-                Orci varius natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Mauris at varius orci. Nullam mattis
-                vulputate nibh. Etiam porttitor tempus tortor vel finibus. Sed a
-                lacus placerat nisi efficitur aliquam. Aliquam et purus sapien.
-                In ut lorem vulputate, feugiat erat non, pharetra justo.
-                Pellentesque finibus, sem at consequat molestie, erat quam
-                molestie est, tincidunt placerat orci purus cursus orci. Duis
-                maximus orci at risus venenatis, non fringilla nisi sodales.
-                Proin odio nunc, ornare eget auctor eu, interdum at ante. Sed
-                tempus facilisis arcu ac imperdiet. Vestibulum ante ipsum primis
-                in faucibus orci luctus et ultrices posuere cubilia Curae; Donec
-                feugiat sem ac tristique dapibus. Pellentesque id nulla augue.
-                Sed vulputate felis et dictum porta. Cras quis placerat ipsum.
-                Vestibulum id eros lectus. Nulla id semper nulla.
+                Scott works as a perinatal network administrator and cares for
+                women and infants. She has a special interest in the adolescent
+                and young adult women population particularly those living in
+                underserved areas. Scott incorporates the physical, social,
+                emotional, and spiritual aspects of life to help women and
+                families obtain optimal health. U.S. Air Force Veteran.
               </p>
             </div>
           </div>
