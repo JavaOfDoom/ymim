@@ -55,6 +55,11 @@ textarea {
   clear: both;
 }
 
+.googleForm {
+  width: 640;
+  height: 767;
+}
+
 @media (min-width: 768px) {
   .col-md-2 {
     flex: 0 0 16.666667%;
